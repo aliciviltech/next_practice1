@@ -16,9 +16,9 @@ const Home = () => {
       <Button>Click me</Button>
       <div className="cardContainer flex gap-10 flex-wrap">
         {
-          menSuit.map((suit)=>{
+          menSuit.map((suit, index)=>{
             return (
-              <Card suit={suit} />
+              <Card key={index} suit={suit} />
             )
           })
         }
